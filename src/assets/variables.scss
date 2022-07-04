@@ -3,3 +3,18 @@
   text-align: center;
   background-color: #333;
 } ;
+
+@mixin header-style() {
+  @include top-el-style();
+  padding: 5px;
+  font-size: 30px;
+  color: #f2f2f2;
+}
+
+@mixin flex-container-style() {
+    // saying it's a container
+    display: flex;
+    // the content of children doesn't go out
+    flex-wrap: wrap;
+    height: 100%;
+}

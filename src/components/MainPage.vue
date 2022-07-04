@@ -15,6 +15,9 @@
               <li>
                 <router-link to="/login">Login</router-link>
               </li>
+              <li>
+                <router-link to="/counter">Counter</router-link>
+              </li>
             </ul>
           </nav>
         </div>
@@ -129,18 +132,11 @@ body {
 
 // a container
 .d-flex {
-  // saying it's a container
-  display: flex;
-  // the content of children doesn't go out
-  flex-wrap: wrap;
-  height: 100%;
+  @include flex-container-style();
 }
 
 header {
-  @include top-el-style();
-  padding: 5px;
-  font-size: 30px;
-  color: #f2f2f2;
+  @include header-style();
 }
 
 nav {
