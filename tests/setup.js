@@ -1,3 +1,3 @@
-import * as Vue from 'vue';
-console.log(Vue);
-Vue.config.productionTip = false;
+global.CSS = {
+  supports: (k, v) => false,
+};
