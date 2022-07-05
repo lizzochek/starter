@@ -1,12 +1,8 @@
 import { shallowMount } from '@vue/test-utils';
-import LoginComp from '@/components/LoginComp.vue';
+import Vuetify from 'vuetify';
 
-describe('LoginComp.vue', () => {
-  it('renders props.msg when passed', () => {
-    const msg = 'new message';
-    const wrapper = shallowMount(LoginComp, {
-      props: { msg },
-    });
-    expect(wrapper.text()).toMatch(msg);
+describe('CounterComp.vue', () => {
+  it('Test', () => {
+    expect(true).toBe(true);
   });
 });
