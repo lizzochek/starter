@@ -1,4 +1,5 @@
 // Styles
+/* eslint-disable */
 import '@mdi/font/css/materialdesignicons.css';
 import 'vuetify/styles';
 
