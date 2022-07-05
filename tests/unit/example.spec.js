@@ -1,10 +1,15 @@
 import { shallowMount } from '@vue/test-utils';
-import Vuetify from 'vuetify';
+
+import vuetify from 'vuetify';
 
 import CounterComp from '../../src/components/CounterComp.vue';
 
 describe('CounterComp.vue', () => {
-  const wrapper = shallowMount(CounterComp, { Vuetify });
+  const wrapper = shallowMount(CounterComp, {
+    global: {
+      plugins: [vuetify],
+    },
+  });
   const btn = wrapper.find('v-btn');
 
   it('Sets the counter right', () => {
